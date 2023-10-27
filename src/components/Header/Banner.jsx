@@ -10,8 +10,8 @@ const Banner = () => {
             <div id="slide1" className="carousel-item relative w-full">
                 <img src={carousel_img1} className="w-full rounded-xl" />
                 <div className="absolute flex items-center  h-full bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0.00)]">
-                    <div className='w-1/2 pl-12 space-y-5'>
-                        <h1 className='text-6xl text-white font-bold'>Affordable Price For Car Servicing</h1>
+                    <div className='w-full lg:w-1/2 px-8 lg:pl-12 space-y-5'>
+                        <h1 className='text-3xl lg:text-6xl text-white font-bold'>Affordable Price For Car Servicing</h1>
                         <p className='my-5 text-white'>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
                         <button className='btn bg-red-600 border-transparent mr-5 font-bold text-white hover:text-black'>Discover More</button>
                         <button className='btn btn-outline border-blue-700 text-white font-bold'>Latest Project</button>
@@ -25,8 +25,8 @@ const Banner = () => {
             <div id="slide2" className="carousel-item relative w-full">
                 <img src={carousel_img2} className="w-full rounded-xl" />
                 <div className="absolute flex items-center  h-full bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0.00)]">
-                    <div className='w-1/2 pl-12 space-y-5'>
-                        <h1 className='text-6xl text-white font-bold'>Affordable Price For Car Servicing</h1>
+                    <div className='w-full lg:w-1/2 px-8 lg:pl-12 space-y-5'>
+                        <h1 className='text-3xl lg:text-6xl text-white font-bold'>Affordable Price For Car Servicing</h1>
                         <p className='my-5 text-white'>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
                         <button className='btn bg-red-600 border-transparent mr-5 font-bold text-white hover:text-black'>Discover More</button>
                         <button className='btn btn-outline border-blue-700 text-white font-bold'>Latest Project</button>
@@ -40,8 +40,8 @@ const Banner = () => {
             <div id="slide3" className="carousel-item relative w-full">
                 <img src={carousel_img3} className="w-full rounded-xl" />
                 <div className="absolute flex items-center  h-full bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0.00)]">
-                    <div className='w-1/2 pl-12 space-y-5'>
-                        <h1 className='text-6xl text-white font-bold'>Affordable Price For Car Servicing</h1>
+                    <div className='w-full lg:w-1/2 px-8 lg:pl-12 space-y-5'>
+                        <h1 className='text-3xl lg:text-6xl text-white font-bold'>Affordable Price For Car Servicing</h1>
                         <p className='my-5 text-white'>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
                         <button className='btn bg-red-600 border-transparent mr-5 font-bold text-white hover:text-black'>Discover More</button>
                         <button className='btn btn-outline border-blue-700 text-white font-bold'>Latest Project</button>
@@ -55,8 +55,8 @@ const Banner = () => {
             <div id="slide4" className="carousel-item relative w-full">
                 <img src={carousel_img4} className="w-full rounded-xl" />
                 <div className="absolute flex items-center  h-full bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0.00)]">
-                    <div className='w-1/2 pl-12 space-y-5'>
-                        <h1 className='text-6xl text-white font-bold'>Affordable Price For Car Servicing</h1>
+                    <div className='w-full lg:w-1/2 px-8 lg:pl-12 space-y-5'>
+                        <h1 className='text-3xl lg:text-6xl text-white font-bold'>Affordable Price For Car Servicing</h1>
                         <p className='my-5 text-white'>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
                         <button className='btn bg-red-600 border-transparent mr-5 font-bold text-white hover:text-black'>Discover More</button>
                         <button className='btn btn-outline border-blue-700 text-white font-bold'>Latest Project</button>

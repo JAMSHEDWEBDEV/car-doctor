@@ -8,6 +8,8 @@ import About from "../Pages/About/About";
 import Services from "../Pages/Services/Services";
 import Blog from "../Pages/Blog/Blog";
 import Contact from "../Pages/Contact/Contact";
+import Login from "../Pages/Login/Login";
+import SignUp from "../Pages/SingUp/SignUp";
 
   const Router = createBrowserRouter([
     {
@@ -33,6 +35,14 @@ import Contact from "../Pages/Contact/Contact";
         {
             path:"/contact",
             element:<Contact></Contact>
+        },
+        {
+          path:"/login",
+          element:<Login></Login>
+        },
+        {
+          path:"/signUp",
+          element:<SignUp></SignUp>
         }
       ]
     },
