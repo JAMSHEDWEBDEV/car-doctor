@@ -1,5 +1,5 @@
 
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import img from '../../assets/login/login.svg';
 import { AiFillGoogleCircle,AiFillFacebook} from 'react-icons/ai';
 import { useContext } from 'react';
@@ -7,6 +7,8 @@ import { AuthContext } from '../../Providers/AuthProvider';
 
 const Login = () => {
     const {signInUser,googleSignIn} = useContext(AuthContext);
+    const navigate = useNavigate();
+    const location = useLocation();
 
     const handleLogin = e =>{
         e.preventDefault();
@@ -18,6 +20,7 @@ const Login = () => {
         signInUser(email,password)
         .then(result =>{
             console.log(result.user);
+            navigate(location?.state? location.state : '/');
         })
         .catch(error =>{
             console.error(error);
