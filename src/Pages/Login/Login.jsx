@@ -4,6 +4,7 @@ import img from '../../assets/login/login.svg';
 import { AiFillGoogleCircle,AiFillFacebook} from 'react-icons/ai';
 import { useContext } from 'react';
 import { AuthContext } from '../../Providers/AuthProvider';
+import axios from 'axios';
 
 const Login = () => {
     const {signInUser,googleSignIn} = useContext(AuthContext);
@@ -15,12 +16,24 @@ const Login = () => {
         const form = e.target;
         const email = form.email.value;
         const password = form.password.value;
-        console.log(email,password);
       
         signInUser(email,password)
         .then(result =>{
-            console.log(result.user);
-            navigate(location?.state? location.state : '/');
+            const loggedInUser = result.user;
+            console.log(loggedInUser);
+            const user = { email };
+            // get access token start
+            axios.post('http://localhost:5000/jwt',user,{withCredentials:true})
+             .then(res =>{
+                console.log(res.data);
+                if(res.data.success){
+                   navigate(location?.state? location.state : '/');
+                }
+             }) 
+             .catch(error =>{
+                console.error(error);
+             })
+
         })
         .catch(error =>{
             console.error(error);
